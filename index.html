@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/e8cab18280.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Css for Number Inputs -->
+    <link rel="stylesheet" href="./main.css" />
+    <title>EquationSystems</title>
+  </head>
+  <body>
+    <div class="container text-center mt-5">
+      <h1 class="text-primary">Dynamic Matrix</h1>
+      <div class="row">
+        <div class="col-1">
+          <div class="container mt-5">
+            <button
+              class="btn btn-primary m-2 rounded-circle"
+              onclick="increaseMatrix()"
+            >
+              <i class="fas fa-plus"></i>
+            </button>
+            <button
+              class="btn btn-primary m-2 rounded-circle"
+              onclick="decreaseMatrix()"
+            >
+              <i class="fas fa-minus"></i>
+            </button>
+          </div>
+        </div>
+        <div class="col-9">
+          <div class="container mt-5  ">
+            <form>
+              <table
+                class="table table-bordered table-responsive-md table-striped text-center "
+              >
+                <thead>
+                  <tr id="m-header"></tr>
+                </thead>
+                <tbody id="m-body"></tbody>
+              </table>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- Script for matrix -->
+    <script src="./script.js"></script>
+  </body>
+</html>
